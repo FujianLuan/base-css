@@ -1,0 +1,5 @@
+@mixin clamp-base {
+    display: -webkit-box; // 值必须为-webkit-box或者-webkit-inline-box
+    -webkit-box-orient: vertical; // 值必须为vertical
+    overflow: hidden;
+}

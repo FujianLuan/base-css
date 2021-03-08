@@ -1,0 +1,27 @@
+@import 'var';
+@import 'mixins';
+
+$row-1: 1!default;
+$row-2: 2!default;
+$row-3: 3!default;
+
+.#{clamp-name}1 {
+    @include clamp-base;
+    #{webkit}line-clamp: $row-1;
+}
+
+.#{clamp-name}2 {
+    @include clamp-base;
+    #{webkit}line-clamp: $row-2;
+}
+
+.#{clamp-name}3 {
+    @include clamp-base;
+    #{webkit}line-clamp: $row-3;
+}
+
+@mixin mixin-clamp($row-num: 1) {
+    @include clamp-base;
+    #{webkit}line-clamp: $row-num;
+}
+
